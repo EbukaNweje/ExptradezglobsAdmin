@@ -3,6 +3,7 @@ import {HiUserAdd} from "react-icons/hi";
 import {Modal} from "antd";
 import {useEffect, useState} from "react";
 import {NavLink} from "react-router-dom";
+import {toast} from "react-hot-toast";
 import axios from "axios";
 // import { useNavigate } from "react-router-dom";
 
@@ -62,6 +63,8 @@ const ManageUsers = () => {
             axios.patch(url)
                 .then((response) => {
                     console.log(response);
+                    toast.success(response.message);
+                    window.location.reload();
                 })
                 .catch((error) => {
                     console.log(error);
