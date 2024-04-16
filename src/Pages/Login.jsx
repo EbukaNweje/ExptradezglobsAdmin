@@ -138,7 +138,7 @@ const Login = () => {
                         </div>
                         <div className="w-full text-center">
                             <p className="text-sm">
-                                © Copyright 2023 Swiftearnprime All Rights
+                                © Copyright 2024 Exptradezglobs All Rights
                                 Reserved.
                             </p>
                         </div>
